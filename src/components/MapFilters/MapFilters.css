@@ -1,0 +1,184 @@
+#filters-main-container
+{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    margin: 0px 0px 10px 10px;
+    gap: 50px;
+}
+
+
+#filters-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    gap: 5px;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.1);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+#filters-info-wrapper
+{
+    position: absolute;
+    top: -28px;
+}
+
+#filters-info
+{
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 6px;
+    font-weight: 600;
+    font-family: system-ui;
+    user-select: none;
+    cursor: help;
+}
+
+#filters-info::before
+{
+    content: "Click to Disable/Enable filters";
+    display: none;
+    position: absolute;
+    top: -23px;
+    font-size: 12px;
+    width: 212px;
+    text-decoration-line: underline;
+}
+
+#filters-info:hover:before
+{
+    display: block;
+}
+
+.change-layer-buttons
+{
+    all: unset;
+    width: 100%;
+    text-align: center;
+    border-radius: 6px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.active-layer-button
+{
+    background: #24e488;
+}
+
+.change-layer-buttons:hover
+{
+    background-color: rgb(0 0 0/5%);
+}
+
+
+
+#user-select-state-wrapper
+{
+    position: relative;
+}
+
+#state-filters-info
+{
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 6px;
+    font-weight: 600;
+    font-family: system-ui;
+    user-select: none;
+}
+
+.custom-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 46px;
+    padding: 10px 38px 10px 16px;
+    background: #fff url('../../assets/chevron-down.svg') no-repeat right 15px center;
+    background-size: 21px;
+    transition: border-color .1s ease-in-out,box-shadow .1s ease-in-out;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.custom-select:hover {
+    border: 1px solid #999;
+}
+.custom-select:focus {
+    border: 1px solid #999;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.2);
+    outline: none;
+}
+
+.custom-select option {
+    background-color: white;
+    color: gray;
+    cursor: pointer;
+    font-size: 18px;
+  }
+/* remove default arrow in IE */
+select::-ms-expand {
+    display:none;
+}
+
+
+
+
+#howto-use-wrapper
+{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+}
+
+#howto-use-wrapper > img
+{
+    width: 30px;
+    cursor: help;
+    animation: wiggle 2s linear infinite;
+}
+
+#howto-use-wrapper > i
+{   
+    opacity: 0;
+    line-height: 14px;
+    margin-left: 5px;
+    transition: 1s;
+    user-select: none;
+}
+
+#howto-use-wrapper  img:hover + i
+{
+    opacity: 1;
+}
+
+
+
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }

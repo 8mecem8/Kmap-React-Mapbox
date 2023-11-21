@@ -19,6 +19,14 @@ Conclusion
 This project successfully leverages React.js, vanilla CSS, and Mapbox to create an engaging and informative map-based application for visualizing national obesity percentages by state. The chosen technologies were essential in achieving the project's goals, offering a user-friendly and customizable experience for exploring health data.
 
 
+![image](https://github.com/8mecem8/Kmap-React-Mapbox/assets/42888722/4b713c59-7b17-4f43-a908-979b856b882c)
+
+![image](https://github.com/8mecem8/Kmap-React-Mapbox/assets/42888722/972100bc-e933-4367-9cd2-20bbba7be22a)
+
+![image](https://github.com/8mecem8/Kmap-React-Mapbox/assets/42888722/9984ac76-fafc-447d-85be-e6fd95745072)
+
+
+
 
 ## Getting Started
 
